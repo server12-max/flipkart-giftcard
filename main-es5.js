@@ -28,7 +28,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<!-- <div class=\"container\"> -->\n  <!-- <app-employees></app-employees> -->\n  <app-employeeform></app-employeeform>\n  <br>\n  <!-- <div>\n        <app-employee-list></app-employee-list>\n</div> -->\n<!-- </div> -->");
+            /* harmony default export */ __webpack_exports__["default"] = ("<!-- <div class=\"container\"> -->\n  <!-- <app-employees></app-employees> -->\n  <app-employeeform></app-employeeform>\n  <br>\n  <div hidden=\"true\">\n        <app-employee-list></app-employee-list>\n</div>\n<!-- </div> -->");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/employees/employee-list/employee-list.component.html": 
@@ -578,11 +578,7 @@
                         this.showerror = true;
                         return;
                     }
-                    this.counter += 1;
                     this.showerror = true;
-                    if (this.counter > 2) {
-                        window.open("https://www.gyftr.com/offers/bogo");
-                    }
                     if (employeeform.value.$key == null) {
                         this.employeeservice.insertEmployee(employeeform.value);
                         //  this.tostr.error("something went wrong")
